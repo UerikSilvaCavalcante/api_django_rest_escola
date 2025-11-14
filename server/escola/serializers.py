@@ -15,8 +15,8 @@ class EstudanteSerializer(serializers.ModelSerializer):
         if nome_invalido(attrs["nome"]):
             raise serializers.ValidationError("Nome inválido")
 
-        if celular_invalido(attrs["numero"]):
-            raise serializers.ValidationError("Número inválido")
+        # if celular_invalido(attrs["numero"]):
+        #     raise serializers.ValidationError("Número inválido")
 
         return attrs
 
